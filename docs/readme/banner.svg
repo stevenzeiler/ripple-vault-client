@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="t d">
+  <title id="t">ripple-vault-client</title>
+  <desc id="d">A vault door with ripples spreading out, next to the word login.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07161a"/>
+      <stop offset="1" stop-color="#0c2b30"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .name { font: 700 64px ui-monospace, SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", monospace; fill: #f4f4f5; }
+    .tag  { font: 400 26px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #d4d4d8; }
+    .tiny { font: 400 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #a1a1aa; }
+    .chip { font: 600 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #f4f4f5; }
+    .era  { font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #5eead4; letter-spacing: 2px; }
+    @keyframes ripple { 0% { r: 30; opacity: .55; } 100% { r: 150; opacity: 0; } }
+    .rp { fill: none; stroke: #5eead4; stroke-width: 2; animation: ripple 9s ease-out infinite; }
+    .r2 { animation-delay: 3s; } .r3 { animation-delay: 6s; }
+    @keyframes turn { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .wheel { transform-origin: 1000px 150px; animation: turn 12s linear infinite; }
+    @media (prefers-reduced-motion: reduce) { .anim { animation: none !important; } }
+  </style>
+  <rect x="4" y="4" width="1192" height="292" rx="26" fill="url(#bg)" stroke="#5eead4" stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="4" y="262" width="1192" height="6" fill="url(#accent)" opacity="0.8"/>
+  <text class="era" x="56" y="70">HISTORICAL PROJECT / 2014</text>
+  <text class="name" x="54" y="150">ripple-vault-client</text>
+  <text class="tag" x="56" y="200">Log in to a Ripple Vault and open the encrypted blob.</text>
+  <text class="tiny" x="56" y="240">JavaScript / HTTP client / Node 0.10 era</text>
+  <g class="motif">
+    <circle class="rp anim" cx="1000" cy="150" r="30"/>
+    <circle class="rp r2 anim" cx="1000" cy="150" r="30"/>
+    <circle class="rp r3 anim" cx="1000" cy="150" r="30"/>
+    <circle cx="1000" cy="150" r="88" fill="#0f2a2e" stroke="#5eead4" stroke-width="5"/>
+    <circle cx="1000" cy="150" r="70" fill="none" stroke="#2dd4bf" stroke-opacity=".5" stroke-width="2"/>
+    <g class="wheel anim" stroke="#5eead4" stroke-width="6" stroke-linecap="round">
+      <line x1="1000" y1="110" x2="1000" y2="190"/><line x1="960" y1="150" x2="1040" y2="150"/>
+      <line x1="972" y1="122" x2="1028" y2="178"/><line x1="1028" y1="122" x2="972" y2="178"/>
+    </g>
+    <circle cx="1000" cy="150" r="18" fill="#0b1f22" stroke="#99f6e4" stroke-width="4"/>
+    <rect x="995" y="146" width="10" height="16" rx="3" fill="#99f6e4"/>
+    <g fill="#134e4a" stroke="#5eead4" stroke-width="2">
+      <rect x="760" y="132" width="86" height="36" rx="8"/><rect x="858" y="132" width="86" height="36" rx="8" opacity=".0"/>
+    </g>
+    <text class="chip" x="772" y="156">login</text>
+    <path d="M846 150 H906" stroke="#5eead4" stroke-width="3" stroke-dasharray="4 6"/>
+  </g>
+</svg>
