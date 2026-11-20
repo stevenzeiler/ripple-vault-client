@@ -10,6 +10,8 @@
 > [!NOTE]
 > **Historical project (spring 2014).** Written for Node 0.10 and the browser, and not maintained. The Ripple Vault service it talks to (the blob vault behind ripple.com logins) has since gone away, so the login calls fail today. `ripple-lib`, which it depends on, is deprecated. Kept for the record. See [docs/STATUS.md](docs/STATUS.md) for what was actually run.
 
+# ripple-vault-client
+
 ## What it is
 
 A JavaScript / HTTP client to interact with Ripple Vault servers. It lets an application in any JavaScript environment (Node, or the browser through a Webpack build) log in with the Ripple vault and read the decrypted data stored using credentials originally obtained at ripple.com: the wallet "blob" and the secret inside it.
@@ -30,7 +32,7 @@ A JavaScript / HTTP client to interact with Ripple Vault servers. It lets an app
 npm install ripple-vault-client
 ```
 
-It was published from this repository's `package.json` (version 1.1.0, entry point `src`). To get a browser bundle, run `grunt` (Webpack writes `build/ripple-vault-client.js`, exported as `RippleVaultClient`).
+It is on npm (versions 0.4.8 to 1.1.0, checked 2026-11-20), published from this repository's `package.json` (entry point `src`). To get a browser bundle, run `grunt` (Webpack writes `build/ripple-vault-client.js`, exported as `RippleVaultClient`).
 
 ## Usage
 

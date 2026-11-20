@@ -43,9 +43,9 @@
     <circle cx="1000" cy="150" r="18" fill="#0b1f22" stroke="#99f6e4" stroke-width="4"/>
     <rect x="995" y="146" width="10" height="16" rx="3" fill="#99f6e4"/>
     <g fill="#134e4a" stroke="#5eead4" stroke-width="2">
-      <rect x="760" y="132" width="86" height="36" rx="8"/><rect x="858" y="132" width="86" height="36" rx="8" opacity=".0"/>
+      <rect x="806" y="132" width="72" height="36" rx="8"/>
     </g>
-    <text class="chip" x="772" y="156">login</text>
-    <path d="M846 150 H906" stroke="#5eead4" stroke-width="3" stroke-dasharray="4 6"/>
+    <text class="chip" x="817" y="156">login</text>
+    <path d="M878 150 H908" stroke="#5eead4" stroke-width="3" stroke-dasharray="4 6"/>
   </g>
 </svg>
